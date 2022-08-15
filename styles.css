@@ -1,0 +1,91 @@
+body {
+    
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+
+}
+.title{
+    color: #2080d8;
+    font-size: 4em;
+}
+
+
+
+.title-bar {
+    background-color: #20b4d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.new-container {
+    font-size: 1.5em;
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.new-button {
+    border-style: none;
+    border-radius: 50%;
+    
+    height: 40px;
+    width: 40px;
+}
+
+.check-read {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.books-container{
+    background-color: #20dbd8;
+}
+form {
+    background-color: #f8efb0;
+    padding: 50px;
+    position: absolute;
+    top: 30%;
+    left: 27vw;
+    width: 33vw;
+    
+    grid-template-rows: repeat(4, 1 fr);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.486) ;
+    gap: 10px;
+    display: none;
+}
+input[type="text"],
+input[type="number"]{
+    border-radius: 10px;
+    height: 1.5em;
+    border-style: none;
+    border: none;
+}
+input[type="text"]:focus-visible,
+input[type="number"]:focus-visible{
+    
+    border-style: solid;
+    border-color: #20b4d8;
+
+}
+
+
+:focus-visible {
+    outline: none;
+}
+form button {
+    padding: 10px;
+    width: 200px;
+    justify-self: center;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #1fa4d6;
+    color: white;
+}
