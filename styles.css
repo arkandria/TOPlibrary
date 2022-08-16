@@ -80,7 +80,7 @@ input[type="number"]:focus-visible{
 :focus-visible {
     outline: none;
 }
-form button {
+input[type="submit"] {
     padding: 10px;
     width: 200px;
     justify-self: center;

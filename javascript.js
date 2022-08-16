@@ -24,14 +24,14 @@ function addBookToLibrary() {
     let bookCard = document.createElement('div');
     let bookTitle = document.createElement('div');
     let bookDescription = document.createElement('div');
-
-    div.appendChild(div)
-
+    bookTitle.classList.add()
+    bookCard.appendChild(bookTitle);
+    bookCard.appendChild(bookDescription);
 
     let temp = new Book (title, author, pages, read)
     myLibrary.push(temp)
 
-
+    form.style.display = 'none';
   }
 
 const container = document.querySelector('#books-container');
