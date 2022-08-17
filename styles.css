@@ -9,14 +9,14 @@ body {
 
 }
 .title{
-    color: #2080d8;
+    color: #F5E1C9;
     font-size: 4em;
 }
 
 
 
 .title-bar {
-    background-color: #20b4d8;
+    background-color: #DE645F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,13 +30,16 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
+.new-text{
+    color:#BDE4E1
+}
 .new-button {
     border-style: none;
     border-radius: 50%;
-    
+    background-color: #BDE4E1;
     height: 40px;
     width: 40px;
+    color:#DE645F
 }
 
 .check-read {
@@ -45,11 +48,16 @@ body {
 }
 
 .books-container{
-    background-color: #20dbd8;
+    background-color: #F5D1C1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     
 }
 form {
-    background-color: #f8efb0;
+    background-color: #F5E1C9;
     padding: 50px;
     position: absolute;
     top: 30%;
@@ -73,7 +81,7 @@ input[type="text"]:focus-visible,
 input[type="number"]:focus-visible{
     
     border-style: solid;
-    border-color: #20b4d8;
+    border-color: #DEC197;
 
 }
 .button-container {
@@ -81,7 +89,7 @@ input[type="number"]:focus-visible{
     justify-content: space-around;
 }
 .button-container button {
-    width: 150px;
+    width: 130px;
     font-size: 0.9em;
     border-radius: 10px;
     border-style: none;
@@ -95,7 +103,7 @@ input[type="number"]:focus-visible{
     justify-self: center;
     border-style: none;
     border-radius: 10px;
-    background-color: #1fa4d6;
+    background-color: #DEC197;
     color: white;
 }
 .reset {
@@ -104,29 +112,32 @@ input[type="number"]:focus-visible{
     justify-self: center;
     border-style: none;
     border-radius: 10px;
-    background-color: #1fa4d6;
+    background-color: #DEC197;
     color: white;
 }
 
 
 
 .book-card {
-    background-color: beige;
+    background-color: #BDE4E1;
     padding: 20px;
-    width: 400px;
+    width: 300px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
-    margin: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
     border-radius: 0 30px;
+    height: 150px;
 }
 
 .book-title {
     font-size: 1.7em;
-    
+    color: #DE645F;
 }
 
 .form-title {
+    color: #DE645F;
     font-size: 1.5em;
     display: flex;
     flex-direction: row;
@@ -138,8 +149,21 @@ input[type="number"]:focus-visible{
     justify-self: center;
     border-style: none;
     border-radius: 50%;
-    background-color: #1fa4d6;
+    background-color: #DEC197;
     color: white;
     position: relative;
     bottom: 50%;
+}
+label {
+    color: rgb(51, 51, 51);
+}
+
+.delete-book,
+.status-change {
+    background-color: #F5E1C9;
+    color: #DE645F;
+}
+
+.book-description {
+    color: rgb(51, 51, 51);
 }

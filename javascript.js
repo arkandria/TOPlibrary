@@ -102,7 +102,7 @@ const onClick = (event) => {
 }    
 window.addEventListener('click', onClick);
 
-//change read status
+//validation not possible because submit will reload page
 
 
 //first book
