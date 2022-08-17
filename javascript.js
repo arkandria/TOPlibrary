@@ -102,8 +102,12 @@ const onClick = (event) => {
 }    
 window.addEventListener('click', onClick);
 
-//validation not possible because submit will reload page
-
+//standard form validation not possible because submit will reload page
+function validate() {
+    if (!(document.getElementById("title").validity.valueMissing) && !(document.getElementById("author").validity.valueMissing) && !(document.getElementById("pages").validity.valueMissing)) { 
+        addBookToLibrary();
+    }
+}
 
 //first book
 const theHobbit = new Book ("The Hobbit", "J.R.R. Tolkien", 295, "on");

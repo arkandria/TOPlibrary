@@ -84,6 +84,11 @@ input[type="number"]:focus-visible{
     border-color: #DEC197;
 
 }
+
+input:invalid {
+    background-color: #ffb6b4;
+}
+
 .button-container {
     display: flex;
     justify-content: space-around;
