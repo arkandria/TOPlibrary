@@ -112,4 +112,6 @@ function validate() {
 //first book
 const theHobbit = new Book ("The Hobbit", "J.R.R. Tolkien", 295, "on");
 myLibrary.push(theHobbit);
+const it = new Book ("It", "Stephen King", 1138, "on");
+myLibrary.push(it);
 displayBooks();
