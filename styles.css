@@ -1,5 +1,5 @@
 body {
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main {
@@ -46,6 +46,7 @@ body {
 
 .books-container{
     background-color: #20dbd8;
+    
 }
 form {
     background-color: #f8efb0;
@@ -75,12 +76,20 @@ input[type="number"]:focus-visible{
     border-color: #20b4d8;
 
 }
-
-
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+.button-container button {
+    width: 150px;
+    font-size: 0.9em;
+    border-radius: 10px;
+    border-style: none;
+}
 :focus-visible {
     outline: none;
 }
-input[type="submit"] {
+#submit {
     padding: 10px;
     width: 200px;
     justify-self: center;
@@ -88,4 +97,49 @@ input[type="submit"] {
     border-radius: 10px;
     background-color: #1fa4d6;
     color: white;
+}
+.reset {
+    padding: 10px;
+    width: 200px;
+    justify-self: center;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #1fa4d6;
+    color: white;
+}
+
+
+
+.book-card {
+    background-color: beige;
+    padding: 20px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    margin: 30px;
+    border-radius: 0 30px;
+}
+
+.book-title {
+    font-size: 1.7em;
+    
+}
+
+.form-title {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.x-reset {
+    height: 1.6em;
+    font-size: 0.8rem;
+    justify-self: center;
+    border-style: none;
+    border-radius: 50%;
+    background-color: #1fa4d6;
+    color: white;
+    position: relative;
+    bottom: 50%;
 }

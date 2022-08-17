@@ -24,8 +24,12 @@
             
         </div>
     </div>
-    <form action="POST">
-
+    <form onsubmit=return false>
+        <div class="form-title">
+            <div>Add Book Details</div>
+            
+            <input type="reset" value="X" class="x-reset">
+        </div>
         <label for="title">Title</label>
         <input type="text" name="title" id="title" required>
         <label for="author">Author</label>
@@ -36,7 +40,8 @@
             <input type="checkbox" name="read" id="read">
             <label for="read">I have finished this book!</label>
         </div>
-        <input type="submit" id="submit">Add to Library</input>
+        <input type="button" onclick="addBookToLibrary()" id="submit" value="Add to Library">
+        <input type="reset" value="Reset" class="reset">
     </form>
 </body>
 </html>
