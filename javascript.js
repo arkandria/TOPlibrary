@@ -1,18 +1,21 @@
 let myLibrary = [];
 ///book object constructor
-function Book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
+class Book {
+    constructor (title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    reportBook() {
+        let isRead = this.read==="on" ? "already read" : "not finished yet";
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${isRead}`;
+    }
+
 }
 
-Book.prototype.reportBook = function (){
-    let isRead = this.read==="on" ? "already read" : "not finished yet";
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${isRead}`;
-}
 
-//add books to array
 
 function addBookToLibrary() {
     let title = document.getElementById("title").value;
